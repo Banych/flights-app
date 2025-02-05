@@ -19,6 +19,7 @@ This is a Flights App built with Vite, React, and TypeScript. It allows users to
 - Axios
 - React Hook Form
 - Zod
+- [Sky Scrapper API](https://rapidapi.com/apiheya/api/sky-scrapper)
 
 ## Getting Started
 
