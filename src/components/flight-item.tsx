@@ -1,3 +1,6 @@
+import dayjs from 'dayjs'
+import { FC, useMemo } from 'react'
+
 import FlightOperatorsLogos from '@/components/flight-operators-logos'
 import { Card, CardHeader } from '@/components/ui/card'
 import {
@@ -7,8 +10,6 @@ import {
 } from '@/components/ui/tooltip'
 import { legLayover } from '@/lib/layoverCalculator'
 import { Itinerary } from '@/types/api'
-import dayjs from 'dayjs'
-import { FC, useMemo } from 'react'
 
 type FlightItemProps = {
     flight: Itinerary

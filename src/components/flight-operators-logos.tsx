@@ -1,8 +1,12 @@
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
-import { TooltipContent, TooltipTrigger } from '@/components/ui/tooltip'
-import { Carrier } from '@/types/api'
-import { Tooltip } from '@radix-ui/react-tooltip'
 import { FC } from 'react'
+
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
+import {
+    Tooltip,
+    TooltipContent,
+    TooltipTrigger,
+} from '@/components/ui/tooltip'
+import { Carrier } from '@/types/api'
 
 type FlightOperatorsLogosProps = {
     companies: Carrier[]

@@ -1,3 +1,6 @@
+import { ClassValue } from 'clsx'
+import { FC, useCallback } from 'react'
+
 import {
     Select,
     SelectContent,
@@ -6,8 +9,6 @@ import {
     SelectValue,
 } from '@/components/ui/select'
 import { cn } from '@/lib/utils'
-import { ClassValue } from 'clsx'
-import { FC, useCallback } from 'react'
 
 type CabinClassSelectorProps = {
     defaultValue: string

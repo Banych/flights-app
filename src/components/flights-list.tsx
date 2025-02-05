@@ -1,9 +1,11 @@
+import { Loader } from 'lucide-react'
+
 import FlightItem from '@/components/flight-item'
 import useFlightsContext from '@/hooks/use-flights-context'
-import { Loader } from 'lucide-react'
 
 const FlightsList = () => {
     const { flights, isSearchFlightsLoading } = useFlightsContext()
+
     return (
         <div className="flex flex-col gap-4">
             {isSearchFlightsLoading ? (

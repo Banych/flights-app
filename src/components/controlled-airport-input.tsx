@@ -1,7 +1,8 @@
-import AirportInput, { AirportInputProps } from '@/components/airport-input'
-import { AirportDTO } from '@/types/api'
 import { FC, useCallback } from 'react'
 import { useController } from 'react-hook-form'
+
+import AirportInput, { AirportInputProps } from '@/components/airport-input'
+import { AirportDTO } from '@/types/api'
 
 type ControlledAirportInputProps = AirportInputProps & {
     path: string

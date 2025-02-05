@@ -1,8 +1,3 @@
-import client from '@/api/client'
-import useGeoCoordinates from '@/hooks/use-geo-coordinates'
-import { AirportDTO, Itinerary } from '@/types/api'
-import { FlightsContextType } from '@/types/flights-context.type'
-import { FormType } from '@/types/form.type'
 import dayjs from 'dayjs'
 import {
     createContext,
@@ -12,6 +7,12 @@ import {
     useEffect,
     useState,
 } from 'react'
+
+import client from '@/api/client'
+import useGeoCoordinates from '@/hooks/use-geo-coordinates'
+import { AirportDTO, Itinerary } from '@/types/api'
+import { FlightsContextType } from '@/types/flights-context.type'
+import { FormType } from '@/types/form.type'
 
 const defaultContextValue: FlightsContextType = {
     nearbyAirports: [],

@@ -1,3 +1,6 @@
+import { ChevronsUpDown, UserRound } from 'lucide-react'
+import { FC, useCallback, useState } from 'react'
+
 import Counter from '@/components/counter'
 import { Button } from '@/components/ui/button'
 import {
@@ -5,8 +8,6 @@ import {
     PopoverContent,
     PopoverTrigger,
 } from '@/components/ui/popover'
-import { ChevronsUpDown, UserRound } from 'lucide-react'
-import { FC, useCallback, useState } from 'react'
 
 type PersonsSelectorProps = {
     defaultValues?: [number, number, number]

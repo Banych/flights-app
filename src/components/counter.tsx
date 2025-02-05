@@ -1,8 +1,9 @@
-import { Button } from '@/components/ui/button'
-import { cn } from '@/lib/utils'
 import { ClassValue } from 'clsx'
 import { Minus, Plus } from 'lucide-react'
 import { FC } from 'react'
+
+import { Button } from '@/components/ui/button'
+import { cn } from '@/lib/utils'
 
 type CounterProps = {
     title: string

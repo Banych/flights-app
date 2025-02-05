@@ -1,15 +1,16 @@
-import { Controller, FormProvider, useForm } from 'react-hook-form'
-import { Button } from '@/components/ui/button'
-import { Search } from 'lucide-react'
 import { useCallback, useMemo } from 'react'
+import { Controller, FormProvider, useForm } from 'react-hook-form'
+import { zodResolver } from '@hookform/resolvers/zod'
+import { Search } from 'lucide-react'
+import dayjs from 'dayjs'
+
+import { Button } from '@/components/ui/button'
 import ControlledAirportInput from '@/components/controlled-airport-input'
 import useFlightsContext from '@/hooks/use-flights-context'
 import DatePicker from '@/components/date-picker'
 import { FormType } from '@/types/form.type'
-import dayjs from 'dayjs'
 import PersonsSelector from '@/components/persons-selector'
 import CabinClassSelector from '@/components/cabin-class-selector'
-import { zodResolver } from '@hookform/resolvers/zod'
 import { searchFormSchema } from '@/components/validation/search-form-schema'
 
 const SearchForm = () => {

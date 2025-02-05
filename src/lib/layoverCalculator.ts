@@ -1,5 +1,6 @@
-import { Leg, Segment } from '@/types/api'
 import dayjs from 'dayjs'
+
+import { Leg, Segment } from '@/types/api'
 
 type Layover = {
     duration: string

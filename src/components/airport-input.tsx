@@ -1,3 +1,8 @@
+import { ChevronsUpDown, Loader } from 'lucide-react'
+import { FC, memo, useCallback, useEffect, useMemo, useState } from 'react'
+import { debounce } from 'lodash'
+import { ClassValue } from 'clsx'
+
 import client from '@/api/client'
 import { Button } from '@/components/ui/button'
 import {
@@ -14,10 +19,6 @@ import {
     PopoverTrigger,
 } from '@/components/ui/popover'
 import { AirportDTO } from '@/types/api'
-import { ChevronsUpDown, Loader } from 'lucide-react'
-import { FC, memo, useCallback, useEffect, useMemo, useState } from 'react'
-import { debounce } from 'lodash'
-import { ClassValue } from 'clsx'
 import { cn } from '@/lib/utils'
 
 export type AirportInputProps = {
