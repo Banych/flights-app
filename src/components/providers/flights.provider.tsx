@@ -33,8 +33,6 @@ const FlightsProvider: FC<PropsWithChildren> = ({ children }) => {
     const currentCoordinates = useGeoCoordinates()
 
     const searchFlights = useCallback(async (formData: FormType) => {
-        console.log(formData)
-
         setFlights([])
         setIsSearchFlightsLoading(true)
 
@@ -59,7 +57,6 @@ const FlightsProvider: FC<PropsWithChildren> = ({ children }) => {
         })
         setFlights((prev) => [...prev, ...result.data.itineraries])
         setIsSearchFlightsLoading(false)
-        console.log(result)
     }, [])
 
     useEffect(() => {

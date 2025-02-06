@@ -22,7 +22,9 @@ export default [
         'plugin:react/recommended',
         'plugin:tailwindcss/recommended'
     ),
-    { files: ['src/**/*.ts', 'src/**/*.tsx'] },
+    {
+        files: ['src/**/*.ts', 'src/**/*.tsx'],
+    },
     { languageOptions: { globals: globals.browser } },
     pluginJs.configs.recommended,
     ...tseslint.configs.recommended,

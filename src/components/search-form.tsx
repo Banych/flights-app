@@ -68,7 +68,11 @@ const SearchForm = () => {
                                         field.value.infants,
                                     ]}
                                     onDoneClick={(persons) => {
-                                        field.onChange(persons)
+                                        field.onChange({
+                                            adults: persons[0],
+                                            children: persons[1],
+                                            infants: persons[2],
+                                        })
                                     }}
                                 />
                                 {error && (
@@ -98,7 +102,7 @@ const SearchForm = () => {
                         )}
                     />
                 </div>
-                <div className="grid w-full grid-cols-[1fr,1fr,1fr,auto] items-center gap-2">
+                <div className="grid w-full grid-cols-1 items-center gap-2 sm:grid-cols-[1fr,1fr,1fr,auto]">
                     <div className="w-full">
                         <ControlledAirportInput
                             path="departureAirport"
@@ -151,7 +155,7 @@ const SearchForm = () => {
                         type="submit"
                         variant="outline"
                         size="icon"
-                        className="shrink-0"
+                        className="w-full shrink-0 sm:size-10"
                         disabled={!isFormValid}
                     >
                         <Search className="size-6" />
